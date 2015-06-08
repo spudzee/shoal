@@ -1,7 +1,7 @@
 $(function()
 {
 	// POPULATION SETUP
-	var POPULATION = 60;
+	var POPULATION = 120;
 	var MIN_MASS = .5;
 	var MAX_MASS = 3.5;
 	var FOOD_RATIO = .2;
@@ -124,6 +124,9 @@ $(function()
 				deadList.push(i);
 				continue;
 			}
+			
+			// check if fish is egg
+			fish.checkEgg();
 
 			// makes the fish compute an action (which direction to swim) according to the information it can get from the environment
 			fish.swim(sea);
