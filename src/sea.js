@@ -1,7 +1,7 @@
 $(function()
 {
 	// POPULATION SETUP
-	var POPULATION = 120;
+	var POPULATION = 60;
 	var MIN_MASS = .5;
 	var MAX_MASS = 3.5;
 	var FOOD_RATIO = .2;
